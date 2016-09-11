@@ -15,6 +15,7 @@
   },
   "homepage": "https://github.com/thinktecture/hackschool-crossplatform/blob/master/README.md",
   "dependencies": {
+    "linq": "3.0.5",
     "nodemon": "1.10.2",
     "require-dir": "0.3.0",
     "restify": "4.1.1",

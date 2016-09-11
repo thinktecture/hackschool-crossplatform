@@ -1,0 +1,27 @@
+{
+  "name": "api",
+  "version": "1.0.0",
+  "description": "Test API for hackschool",
+  "main": "src/index.js",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/thinktecture/hackschool-crossplatform"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/thinktecture/hackschool-crossplatform/issues"
+  },
+  "homepage": "https://github.com/thinktecture/hackschool-crossplatform/blob/master/README.md",
+  "dependencies": {
+    "nodemon": "1.10.2",
+    "require-dir": "0.3.0",
+    "restify": "4.1.1",
+    "restify-cors-middleware": "0.0.7"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "start": "nodemon ./src/index.js"
+  }
+}

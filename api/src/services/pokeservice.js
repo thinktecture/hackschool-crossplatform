@@ -51,9 +51,11 @@ const pokeService = {
         if (to)
             query = query.where(p => p.id <= to);
 
-        return query.select(p => new {
+        return query.select(p => {
+                return {
                     id: p.id,
                     name: p.name,
+                }
             })
             .toArray();
     },

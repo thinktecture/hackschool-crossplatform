@@ -1,0 +1,5 @@
+<ul>
+    <li *ngFor="let pokemon of pokemonList" [routerLink]="['/detail', pokemon.id]">
+        {{ pokemon.name }}
+    </li>
+</ul>

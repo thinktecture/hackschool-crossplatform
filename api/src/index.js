@@ -2,7 +2,7 @@
 
 const
     server = require('./server'),
-    port = process.env.PORT || 8000;
+    port = process.env.PORT || 8090;
 
 server.on('uncaughtException', (req, res, route, err) => {
     console.log(`API encountered an error handling route '${route.methods} ${route.name}': ${err.toString()}`);

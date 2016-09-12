@@ -1,0 +1,6 @@
+<div *ngIf="pokemon">
+    <h1>{{ pokemon.name }}</h1>
+    <img [src]="pokemon.imageUrl">
+</div>
+
+<a [routerLink]="['/']">Zurück</a>

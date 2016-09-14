@@ -4,6 +4,7 @@ export class Pokemon {
     public thumbnailUrl: string;
     public imageUrl: string;
     public evolutions: Array<number>;
+    public types: Array<string>;
 
     public static deserialize(obj: any): Pokemon {
         let pokemon = new Pokemon();
@@ -12,6 +13,7 @@ export class Pokemon {
         pokemon.thumbnailUrl = obj.thumbnail;
         pokemon.imageUrl = obj.image;
         pokemon.evolutions = obj.evolvesTo;
+        pokemon.types = obj.type;
 
         return pokemon;
     }

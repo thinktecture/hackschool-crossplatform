@@ -3,10 +3,22 @@
         <h3 class="panel-title">{{ pokemon.name }}</h3>
     </div>
     <div class="panel-body">
-        <img [src]="pokemon.imageUrl">
+        <div class="row">
+            <div class="col-xs-12">
+                <img [src]="pokemon.imageUrl"><br>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-xs-12">
+                <b>Type: </b>
+                <ul>
+                    <li *ngFor="let type of pokemon.types">{{ type }}</li>
+                </ul>
+            </div>
+        </div>
     </div>
     <div class="panel-footer">
-        <a [routerLink]="['/']">Zurück zum Pokédex</a>
+        <a [routerLink]="['/']">Back to Pokédex</a>
     </div>
 </div>
 

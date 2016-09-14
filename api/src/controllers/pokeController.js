@@ -18,7 +18,7 @@ const list = (req, res, next) => {
 
 const single = (req, res, next) => {
     let id = Number(req.params.id);
-    var result = pokeService.pokemon(id);
+    var result = pokeService.singlePokemon(id);
 
     res.writeHead(200, {
         'Content-Type': 'application/json; charset=utf-8'

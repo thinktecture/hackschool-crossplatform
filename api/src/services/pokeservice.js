@@ -4,38 +4,44 @@ const pokedata = [
     {
         id: 1,
         name: "Bulbasaur",
+        thumbnail: "http://pokedream.com/pokedex/images/mini/001.png",
         image: "http://pokedream.com/pokedex/images/sugimori/001.jpg",
-        evolvesTo: [ 2 ],
+        evolvesTo: [2],
     },
     {
         id: 2,
         name: "Ivysaur",
+        thumbnail: "http://pokedream.com/pokedex/images/mini/002.png",
         image: "http://pokedream.com/pokedex/images/sugimori/002.jpg",
-        evolvesTo: [ 3 ],
+        evolvesTo: [3],
     },
     {
         id: 3,
         name: "Venusaur",
+        thumbnail: "http://pokedream.com/pokedex/images/mini/003.png",
         image: "http://pokedream.com/pokedex/images/sugimori/003.jpg",
-        evolvesTo: [ ],
+        evolvesTo: [],
     },
     {
         id: 4,
         name: "Charmander",
+        thumbnail: "http://pokedream.com/pokedex/images/mini/004.png",
         image: "http://pokedream.com/pokedex/images/sugimori/004.jpg",
-        evolvesTo: [ 5 ],
+        evolvesTo: [5],
     },
     {
         id: 5,
         name: "Charmeleon",
+        thumbnail: "http://pokedream.com/pokedex/images/mini/005.png",
         image: "http://pokedream.com/pokedex/images/sugimori/005.jpg",
-        evolvesTo: [ 6 ],
+        evolvesTo: [6],
     },
     {
         id: 6,
         name: "Charizard",
+        thumbnail: "http://pokedream.com/pokedex/images/mini/006.png",
         image: "http://pokedream.com/pokedex/images/sugimori/006.jpg",
-        evolvesTo: [ ],
+        evolvesTo: [],
     },
 ];
 
@@ -52,11 +58,12 @@ const pokeService = {
             query = query.where(p => p.id <= to);
 
         return query.select(p => {
-                return {
-                    id: p.id,
-                    name: p.name,
-                }
-            })
+            return {
+                id: p.id,
+                name: p.name,
+                thumbnail: p.thumbnail
+            }
+        })
             .toArray();
     },
 

@@ -19,12 +19,9 @@ const config = {
         templates: [
             'src/**/*.html'
         ],
-        styles: {
-            all: ['src/less/**/*.less'],
-            main: [
-                'src/less/app.less'
-            ]
-        },
+        styles: [
+            'src/css/**/*'
+        ],
         assets: [
             'src/assets/**/*'
         ],
@@ -32,7 +29,6 @@ const config = {
             cordovaJs: 'resources/cordova/cordova.js',
             config: 'resources/cordova/config.xml',
             hooks: 'resources/cordova/hooks/**/*',
-            electron: 'resources/electron/**/*',
             icons: 'resources/icons/*',
             iconsFolder: 'resources/icons'
         }
@@ -41,6 +37,7 @@ const config = {
         build: 'build',
         lib: 'build/lib',
         assets: 'build/assets',
+        styles: 'build/css',
         cordova: 'dist/mobile'
     },
     typescript: {

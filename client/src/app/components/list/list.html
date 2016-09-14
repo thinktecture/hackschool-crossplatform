@@ -1,5 +1,5 @@
-<ul>
-    <li *ngFor="let pokemon of pokemonList" [routerLink]="['/detail', pokemon.id]">
-        {{ pokemon.name }}
-    </li>
-</ul>
+<div class="list-group">
+    <a *ngFor="let pokemon of pokemonList" [routerLink]="['/detail', pokemon.id]" class="list-group-item">
+        <img [src]="pokemon.thumbnailUrl">{{pokemon.id }} - {{ pokemon.name }}
+    </a>
+</div>

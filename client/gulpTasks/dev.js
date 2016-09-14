@@ -8,7 +8,6 @@ const gulp = require('gulp'),
     inlineNg2Template = require('gulp-inline-ng2-template'),
     tsc = require('gulp-typescript'),
     count = require('gulp-count'),
-    less = require('gulp-less'),
     batch = require('gulp-batch'),
     autoprefixer = require('gulp-autoprefixer'),
     watch = require('gulp-watch'),
@@ -78,10 +77,14 @@ function createLessPipe(sources) {
         .pipe(browserSync.stream({ match: '**/*.css' }));
 }
 
-gulp.task('dev:styles', () => createLessPipe(gulp.src(config.sources.styles.main)));
+gulp.task('dev:styles', () => {
+    return gulp.src(config.sources.styles)
+        .pipe(gulp.dest(config.targets.styles));
+});
 
-gulp.task('dev:styles:watch', () => watch(config.sources.styles.all,
-    batch(events => createLessPipe(gulp.src(config.sources.styles.main)))));
+gulp.task('dev:styles:watch', () => {
+    watch(config.sources.styles, batch((events, done) => runSequence('dev:styles', done)));
+});
 
 gulp.task('dev:watch:init', done => {
     browserSync.init(config.browserSync, done);

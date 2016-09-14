@@ -10,8 +10,10 @@ import {Pokemon} from '../../models/pokemon';
 })
 export class DetailComponent implements OnInit {
     public pokemon: Pokemon;
+    public evolutions: Array<Pokemon>;
 
     constructor(private _route: ActivatedRoute, private _pokemonService: PokemonService) {
+        this.evolutions = [];
     }
 
     public ngOnInit(): void {

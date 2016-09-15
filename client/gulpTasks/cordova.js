@@ -66,6 +66,7 @@ gulp.task('cordova:copy:app', () => {
 gulp.task('cordova:prepare', () => {
     executeInCordovaFolder(() => {
         sh.exec('$(npm bin)/cordova prepare');
+        sh.exec('$(npm bin)/cordova prepare');
     });
 });
 

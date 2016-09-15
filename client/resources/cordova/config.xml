@@ -22,6 +22,8 @@
         <hook type="after_platform_add" src="hooks/android/after_platform_add_add_plugins.js"/>
     </platform>
 
+    <hook type="after_prepare" src="hooks/after_prepare_change_content_source.js"/>
+
     <access origin="*"/>
 
     <allow-intent href="http://*/*"/>

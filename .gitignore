@@ -1,0 +1,7 @@
+.idea
+node_modules
+/build
+/client/build
+/client/dist
+/client/typings
+~$*.pptx

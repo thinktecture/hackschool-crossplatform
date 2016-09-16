@@ -96,7 +96,7 @@ gulp.task('dev:vendorScripts', () => {
 });
 
 gulp.task('dev:nodeModules', () => {
-    return gulp.src(config.nodeModules.map(m => path.join('node_modules', m, '**/*')), { base: 'node_modules' })
+    return gulp.src(config.nodeModules.map(m => path.join('node_modules', m, '**/*.+(js|map)')), { base: 'node_modules' })
         .pipe(gulp.dest(config.targets.lib));
 });
 

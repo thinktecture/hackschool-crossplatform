@@ -22,3 +22,7 @@ Die API hört auf Port 8090 und beantwortet dort Anfragen. Die zwei Funktionen d
 Die Anwendung ist mit Angular 2.0.0 realisiert. Auch hier müssern erst mit `npm i` die benötigen Tools zum bauen der Anwendung installiert werden. Um die Anwendung lokal im Browser zu testen wird diese mit `npm start` gebaut, und daraufhin ein lokaler Webserver auf Port 8000 gestartet. Mit `http://localhost:8000` kann die Anwendung im Browser aufgerufen werden.
 
 Mit `npm run build-mobile` wird die Anwendung mit Cordova vorbereitet, so dass man sie auf Geräte und Emulatoren verwenden kann.
+
+
+## Special thanks
+Special thanks to http://pokedream.com/ to allow us to use their images!

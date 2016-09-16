@@ -65,7 +65,7 @@ gulp.task('cordova:copy:app', () => {
 
 gulp.task('cordova:prepare', () => {
     executeInCordovaFolder(() => {
-        sh.exec('$(npm bin)/cordova prepare');
+        sh.exec('"../../node_modules/.bin/cordova" prepare');
     });
 });
 
@@ -74,8 +74,8 @@ gulp.task('cordova:icon-and-splash', () => {
         .pipe(gulp.dest(config.targets.cordova))
         .on('end', () => {
             executeInCordovaFolder(() => {
-                sh.exec('$(npm bin)/cordova-icon');
-                sh.exec('$(npm bin)/cordova-splash');
+                sh.exec('"../../node_modules/.bin/cordova-icon"');
+                sh.exec('"../../node_modules/.bin/cordova-splash"');
             });
         });
 });

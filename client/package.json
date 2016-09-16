@@ -1,5 +1,5 @@
 {
-    "name": "thinktecture-hacks",
+    "name": "hackschool-crossplatform",
     "version": "1.0.0",
     "description": "Sample used to demonstrate modern cross-platform applications",
     "main": "gulpfile.js",
@@ -13,14 +13,14 @@
     },
     "repository": {
         "type": "git",
-        "url": "git+https://github.com/thinktecture/thinktecture-hacks.git"
+        "url": "git+https://github.com/thinktecture/hackschool-crossplatform.git"
     },
     "author": "Thinktecture AG <office@thinktecture.com>",
     "license": "ISC",
     "bugs": {
-        "url": "https://github.com/thinktecture/thinktecture-hacks/issues"
+        "url": "https://github.com/thinktecture/hackschool-crossplatform/issues"
     },
-    "homepage": "https://github.com/thinktecture/thinktecture-hacks#readme",
+    "homepage": "https://github.com/thinktecture/hackschool-crossplatform#readme",
     "devDependencies": {
         "@angular/common": "2.0.0-rc.7",
         "@angular/compiler": "2.0.0-rc.7",

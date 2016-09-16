@@ -91,6 +91,7 @@ gulp.task('cordova-build', done => {
         'cordova:copy:app',
         'cordova:prepare',
         'cordova:icon-and-splash',
+        'cordova:prepare',
         done
     );
 });
@@ -106,6 +107,7 @@ gulp.task('cordova-update', done => {
         'cordova:copy:app',
         'cordova:prepare',
         'cordova:icon-and-splash',
+        'cordova:prepare',
         done
     )
 });

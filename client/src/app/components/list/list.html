@@ -1,0 +1,6 @@
+<div class="list-group">
+    <a class="list-group-item" *ngFor="let pokemon of pokemonList">
+        <img [src]="pokemon.thumbnail">
+        {{ pokemon.id }} - {{ pokemon.name }}
+    </a>
+</div>
